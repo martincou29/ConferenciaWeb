@@ -266,6 +266,10 @@ h1.nombre-sitio#title-nav::before{
   }
 }
 
+nav.navbar{
+  display: none;
+}
+
 nav.navbar a {
   color: #fff;
   font-size: 2vw;
