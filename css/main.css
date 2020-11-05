@@ -18,7 +18,7 @@ html {
   line-height: 1.4;
 }
 
-/*
+/*f
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
@@ -124,7 +124,7 @@ h2 {
   text-align: center;
 }
 
-h3{
+h3 {
   font-size: 1.8em;
   font-family: var(--font-PTSans);
   margin: 0;
@@ -132,6 +132,7 @@ h3{
 }
 
 /* Responsive Containers  */
+
 .container {
   width: 98%;
   margin: 0 auto;
@@ -155,7 +156,7 @@ h3{
   }
 }
 
-.button{
+.button {
   font-family: var(--font-oswald);
   font-size: 1.2rem;
   background-color: var(--primary-color);
@@ -168,12 +169,92 @@ h3{
   transition: all .3s ease;
 }
 
-.button:hover{
+.button:hover {
   background-color: #e6421d;
 }
 
-.float-right{
+.float-right {
   float: right;
+}
+
+/** GRID
+
+
+El Grid divide en 12 columnas al 100% del espacio.
+
+100% / 12 = 8.33
+
+Ej: 8.33 * 10 columnas = 83.3%
+
+*/
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.row {
+  justify-content: space-around;
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex: 0 1 auto;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
+.centrar-columnas {
+  justify-content: center;
+}
+
+@media only screen and (min-width: 48em) {
+  .container {
+    width: 46rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .container {
+    width: 61rem;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .container {
+    width: 71rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-2 {
+    flex: 0 0 calc(16.667% - 1rem);
+  }
+  .col-4 {
+    flex: 0 0 calc(33.3% - 1rem);
+  }
+  .col-6 {
+    flex: 0 0 calc(50% - 1rem);
+  }
+  .col-8 {
+    flex: 0 0 calc(66.6% - 1rem);
+  }
+  .col-10 {
+    flex: 0 0 calc(83.3% - 1rem);
+  }
+  .col-12 {
+    flex: 0 0 100%;
+  }
 }
 
 /** HEADER */
@@ -406,7 +487,6 @@ h2::after {
 
 section.programa {
   position: relative;
-  height: 100vh;
 }
 
 div.contenedor-video {
@@ -469,8 +549,7 @@ nav.menu-programa a {
   }
 }
 
-nav.menu-programa a i,
-div.detalle-evento i{
+nav.menu-programa a i, div.detalle-evento i {
   font-size: 1.6rem;
   margin-right: 10px;
   color: var(--primary-color);
@@ -483,13 +562,22 @@ div.detalle-evento {
   padding-bottom: 0 20px;
   border-bottom: 1px solid #000;
 }
+
 div.detalle-evento:nth-child(2) {
   border: none;
 }
 
-div.detalle-evento p{
+div.detalle-evento p {
   margin-bottom: 20px;
   font-size: 20px;
+}
+
+/** INVITADOS */
+
+div.lista-invitados {}
+
+div.invitado img {
+  width: 100%;
 }
 
 /* ==========================================================================
