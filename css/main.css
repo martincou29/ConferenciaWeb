@@ -168,8 +168,8 @@ h3 {
   display: inline-block;
   transition: all .3s ease;
   border: 1px solid var(--primary-color);
-
 }
+
 
 
 .button.hollow,
@@ -177,6 +177,19 @@ h3 {
   background-color: white;
   color: var(--primary-color);
 
+}
+
+.button.transparente{
+  background-color: transparent;
+  border:2px solid #fff;
+}
+
+.button.transparente:hover{
+  border:2px solid var(--primary-color);
+}
+
+.button:hover{
+  background-color: #e33000;
 }
 
 .float-right {
@@ -682,6 +695,123 @@ div.tabla-precio h3{
 div.tabla-precio p.numero{
   color: #000;
   margin: 20px 0;
+}
+
+
+/** MAPA*/
+
+div.mapa{
+  height: 420px;
+  background-color: green;
+}
+
+
+/*** testimoniales */
+
+div.testimoniales{
+padding-bottom: 20px;
+display: flex;
+justify-content: space-between;
+}
+
+div.testimonial{
+  padding:5px;
+}
+
+@media only screen and (min-width: 768px){
+  div.testimonial{
+    flex-basis: calc(33.3% - 1rem);
+  }
+}
+
+blockquote{
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  position: relative;
+  margin: 0 0 10px 0;
+  padding-bottom: 20px;
+}
+
+blockquote p{
+  text-align: justify!important;
+  font-size: 1rem!important;
+  font-family: var(--font-PTSans);
+  padding: 0 20px 0 65px;
+
+}
+
+blockquote p::before{
+  content: '\201c';
+  position: absolute;
+  left: 13px;
+  top: -56px;
+  font-size: 8rem;
+  margin: 0;
+  line-height: 2;
+  color: var(--primary-color);
+}
+
+footer.info-testimonial{
+  padding: 0;
+
+}
+
+footer.info-testimonial img{
+  float: left;
+  width: 20%;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+footer.info-testimonial cite{
+  text-align: left;
+  float: right;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-top: 20px;
+  width: 66.6%;
+  font-weight: bold;
+  font-style: normal;
+}
+
+footer.info-testimonial cite span{
+  text-transform: none;
+  display: block;
+  color: #868686;
+  margin-top: 5px;
+}
+
+/** NewsLetters */
+
+div.newsletter{
+  position: relative;
+  height: auto;
+}
+
+div.newsletter::before{
+  background-image: url(../img/bg-newsletter.jpg);
+  content: '';
+}
+
+div.newsletter .contenido{
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+div.newsletter .contenido p{
+  font-size: 1.2em;
+  text-transform: lowercase;
+}
+
+div.newsletter .contenido h3{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: var(--font-PTSans);
+  font-size: 7vw;
+  margin-bottom: 20px;
 }
 
 
