@@ -152,7 +152,7 @@ h3 {
 
 @media (min-width: 992px) {
   .container {
-    width: 90%;
+    width: 85%;
   }
 }
 
@@ -177,85 +177,9 @@ h3 {
   float: right;
 }
 
-/** GRID
 
 
-El Grid divide en 12 columnas al 100% del espacio.
 
-100% / 12 = 8.33
-
-Ej: 8.33 * 10 columnas = 83.3%
-
-*/
-
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
-
-.row {
-  justify-content: space-around;
-  box-sizing: border-box;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex: 0 1 auto;
-  -webkit-box-flex: 0;
-  flex: 0 1 auto;
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -1rem;
-  margin-left: -1rem;
-}
-
-.centrar-columnas {
-  justify-content: center;
-}
-
-@media only screen and (min-width: 48em) {
-  .container {
-    width: 46rem;
-  }
-}
-
-@media only screen and (min-width: 62em) {
-  .container {
-    width: 61rem;
-  }
-}
-
-@media only screen and (min-width: 75em) {
-  .container {
-    width: 71rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .col-2 {
-    flex: 0 0 calc(16.667% - 1rem);
-  }
-  .col-4 {
-    flex: 0 0 calc(33.3% - 1rem);
-  }
-  .col-6 {
-    flex: 0 0 calc(50% - 1rem);
-  }
-  .col-8 {
-    flex: 0 0 calc(66.6% - 1rem);
-  }
-  .col-10 {
-    flex: 0 0 calc(83.3% - 1rem);
-  }
-  .col-12 {
-    flex: 0 0 100%;
-  }
-}
 
 /** HEADER */
 
@@ -574,11 +498,51 @@ div.detalle-evento p {
 
 /** INVITADOS */
 
-div.lista-invitados {}
+div.invitado{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.4rem;
+}
+
 
 div.invitado img {
   width: 100%;
+  filter: grayscale(1);
+  transition: all .5s ease-in-out;
+
 }
+
+
+div.invitado :hover img{
+  filter: grayscale(0);
+  transform: scale(1.1);
+  color: #000;
+}
+
+
+div.invitado p{
+  position: absolute;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 15px 15px;
+  margin: 0;
+  font-family: var(--font-oswald);
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  text-align: left;
+  text-transform: uppercase;
+  transition: all .5s ease-in-out;
+}
+
+div.invitado:hover p{
+  bottom: -50px;
+  opacity: 0;
+}
+
+
 
 /* ==========================================================================
    Helper classes
