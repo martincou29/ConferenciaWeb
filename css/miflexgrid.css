@@ -1,0 +1,109 @@
+/* Styles CSS */
+
+/* miflexgrid.css | Martin Coutinho | https://github.com/martincou29 */
+
+/*
+ * El Grid divide en 12 columnas al 100% del espacio.
+ * 100% / 12 = 8.33
+ * Ej: 8.33 * 10 columnas = 83.3%
+ */
+
+/* ==========================================================================
+   CONTAINERS
+   ========================================================================== */
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .container {
+    width: 46rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .container {
+    width: 61rem;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .container {
+    width: 71rem;
+  }
+}
+
+/* ==========================================================================
+   ROWS AND COLUMNS
+   ========================================================================== */
+
+.row {
+  justify-content: space-around;
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex: 0 1 auto;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
+/**
+*  Se aumenta el tamaño de los elementos .col en un 1.5%
+*  Para que sea Responsive y se ajuste al tamaño de pantalla.
+*/
+
+@media only screen and (min-width: 65em) {
+  .col-2 {
+    flex: 0 0 calc(16.667%*1.5 - 1rem);
+  }
+  .col-4 {
+    flex: 0 0 calc(30%*1.5 - 1rem);
+  }
+  .col-6 {
+    flex: 0 0 calc(50%*1.5 - 1rem);
+  }
+  .col-8 {
+    flex: 0 0 calc(66.6%*1.5 - 1rem);
+  }
+  .col-10 {
+    flex: 0 0 calc(83.3%*1.5 - 1rem);
+  }
+  .col-12 {
+    flex: 0 0 100%;
+  }
+}
+
+
+@media only screen and (min-width: 75em) {
+  .col-2 {
+    flex: 0 0 calc(16.667% - 1rem);
+  }
+  .col-4 {
+    flex: 0 0 calc(30% - 1rem);
+  }
+  .col-6 {
+    flex: 0 0 calc(50% - 1rem);
+  }
+  .col-8 {
+    flex: 0 0 calc(66.6% - 1rem);
+  }
+  .col-10 {
+    flex: 0 0 calc(83.3% - 1rem);
+  }
+  .col-12 {
+    flex: 0 0 100%;
+  }
+}
