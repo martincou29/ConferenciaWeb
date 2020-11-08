@@ -360,7 +360,7 @@ nav.navbar a:hover {
   background-color: var(--primary-color);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 990px) {
   nav.navbar {
     width: 67%;
     float: right;
@@ -388,7 +388,7 @@ div.mobile-menu:hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 990px) {
   div.mobile-menu {
     display: none;
   }
@@ -742,6 +742,7 @@ blockquote p::before {
 
 footer.info-testimonial {
   padding: 0;
+  background-color: transparent;
 }
 
 footer.info-testimonial img {
