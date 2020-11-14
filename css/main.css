@@ -792,6 +792,7 @@ div.newsletter .contenido {
 div.newsletter .contenido p {
   font-size: 1.2em;
   text-transform: lowercase;
+  text-shadow: 4px 4px #000;
 }
 
 div.newsletter .contenido h3 {
@@ -800,6 +801,7 @@ div.newsletter .contenido h3 {
   font-family: var(--font-PTSans);
   font-size: 7vw;
   margin-bottom: 20px;
+  text-shadow: 4px 2px #000;
 }
 
 /* Cuenta regresiva */
