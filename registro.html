@@ -105,7 +105,7 @@
             <input type="email" id="email" name="email" placeholder="Tu Email">
           </div>
           <div id="error"></div>
-        </div><!-- final datos usuario-->
+        </div><!--#datos_usuario-->
         <div id="paquetes" class="paquetes">
           <h3>Elige el numero de boletos</h3>
           <ul class="lista-precios">
@@ -120,7 +120,7 @@
                 </ul>
                 <div class="orden">
                   <label for="pase_dia">Boletos deseados:</label>
-                  <input type="number" min="0" id="pase_dia" size="3" placeholder="0">
+                  <input type="number" min="0" id="pase_dia" size="3" placeholder="0" value="0">
                 </div>
               </div><!--tabla-->
             </li>
@@ -134,8 +134,8 @@
                   <li>Todos los talleres</li>
                 </ul>
                 <div class="orden">
-                  <label for="pase_dia">Boletos deseados:</label>
-                  <input type="number" min="0" id="pase_dia" size="3" placeholder="0">
+                  <label for="pase_completo">Boletos deseados:</label>
+                  <input type="number" min="0" id="pase_completo" size="3" placeholder="0" value="0">
                 </div>
               </div><!--tabla-->
             </li>
@@ -149,13 +149,13 @@
                   <li>Todos los talleres</li>
                 </ul>
                 <div class="orden">
-                  <label for="pase_dia">Boletos deseados:</label>
-                  <input type="number" min="0" id="pase_dia" size="3" placeholder="0">
+                  <label for="pase_dosdias">Boletos deseados:</label>
+                  <input type="number" min="0" id="pase_dosdias" size="3" placeholder="0" value="0">
                 </div>
               </div><!--tabla-->
             </li>
           </ul>
-        </div>
+        </div><!--#Paquetes-->
         <div id="eventos" class="eventos clearfix">
           <h3>Elige tus talleres</h3>
           <div class="caja">
@@ -233,11 +233,11 @@
           <div class="extras clearfix">
             <div class="orden">
               <label for="camisa_evento">Camisa del evento $10 <small>(promocion 7% dto.)</small></label>
-              <input type="numbre" min="0" id="camisa_evento" size="3" placeholder="0">
+              <input type="number" min="0" id="camisa_evento" size="3" placeholder="0">
             </div><!--orden-->
             <div class="orden">
               <label for="etiquetas">Paquete de 10 etiquetas $2 <small>(HTML5, CSS3, JavasCript,Chrome)</small></label>
-              <input type="numbre" min="0" id="etiquetas" size="3" placeholder="0">
+              <input type="number" min="0" id="etiquetas" size="3" placeholder="0">
             </div><!--orden-->
             <div class="orden">
               <label for="regalo">Seleccione un regalo</label> <br>
@@ -253,7 +253,7 @@
           </div><!--extras-->
           <div class="total">
             <p>Resumen:</p>
-            <div class="lista-productos">
+            <div class="lista-productos" id="lista-productos">
 
             </div>
             <p>Total:</p>
@@ -263,7 +263,7 @@
             <input id="btnRegistro"type="submit" class="button" value="Pagar">
           </div><!--total-->
         </div><!--caja-->
-      </div><!--resumen-->
+      </div><!--#resumen-->
     </form>
   </section>
 
