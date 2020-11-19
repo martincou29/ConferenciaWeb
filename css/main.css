@@ -434,6 +434,15 @@ div.contenedor-video {
   overflow-x: hidden;
 }
 
+
+@media only screen and (min-width: 92em) {
+  div.contenedor-video video{
+    width: 100%;
+    max-height: 50%;
+  }
+}
+
+
 div.contenido-programa {
   position: absolute;
   top: 0;
@@ -446,6 +455,7 @@ div.programa-evento {
   background-color: rgba(255, 255, 255, .8);
   padding: 15px;
   margin-top: 80px;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
@@ -460,10 +470,11 @@ div.programa-evento {
   }
 }
 
+
+
 nav.menu-programa {
   width: 100%;
-  border-bottom: 1px solid var(--primary-color);
-  padding-bottom: 10px;
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -474,13 +485,33 @@ nav.menu-programa {
 
 nav.menu-programa a {
   display: block;
+  position: relative;
   text-align: center;
   color: #000000;
   text-decoration: none;
   font-family: var(--font-oswald);
   font-size: 1.5rem;
+  border-bottom: 1px solid var(--primary-color);
   margin-bottom: 10px;
 }
+
+
+
+nav.menu-programa a.activo::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  width: 20px;
+  background-image: url(../img/talleres-flecha.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 
 @media only screen and (min-width: 768px) {
   nav.menu-programa a {
@@ -488,6 +519,7 @@ nav.menu-programa a {
     border-spacing: 15px;
   }
 }
+
 
 nav.menu-programa a i, div.detalle-evento i {
   font-size: 1.6rem;
@@ -497,10 +529,15 @@ nav.menu-programa a i, div.detalle-evento i {
 
 /** detalle evento */
 
+.info-curso.ocultar{
+  display: none;
+}
+
 div.detalle-evento {
   margin-top: 20px;
   padding-bottom: 0 20px;
   border-bottom: 1px solid #000;
+
 }
 
 div.detalle-evento:nth-child(2) {
@@ -511,6 +548,8 @@ div.detalle-evento p {
   margin-bottom: 20px;
   font-size: 20px;
 }
+
+
 
 /** INVITADOS */
 

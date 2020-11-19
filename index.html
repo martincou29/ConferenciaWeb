@@ -103,10 +103,10 @@
         <div class="programa-evento">
           <h2>Programa del Evento</h2>
           <nav class="menu-programa">
-            <a href="#talleres"><i class="fas fa-code"></i> Talleres</a>
+            <a href="#talleres" class="activo"><i class="fas fa-code"></i> Talleres</a>
             <a href="#conferencias"><i class="fas fa-comment"></i> Conferencias</a>
             <a href="#seminarios"><i class="fas fa-university"></i> Seminarios</a>
-          </nav>
+          </nav><!--Menu programa-->
           <div id="talleres" class="info-curso ocultar clearfix">
             <div class="detalle-evento">
               <h3>HTML5, CSS3 y Javascript</h3>
@@ -121,8 +121,38 @@
               <p><i class="fas fa-user"></i> Juan Pablo De La Torre Valdez</p>
             </div>
             <a href="#" class="button float-right"> Ver todos</a>
-          </div>
-        </div>
+          </div><!--Talleres-->
+          <div id="conferencias" class="info-curso ocultar clearfix">
+            <div class="detalle-evento">
+              <h3>Como aprender JavaScript</h3>
+              <p><i class="fas fa-clock"></i> 16:00 hrs</p>
+              <p><i class="fas fa-calendar"></i> 10 de Dic</p>
+              <p><i class="fas fa-user"></i> Juan Pablo De La Torre Valdez</p>
+            </div>
+            <div class="detalle-evento">
+              <h3>Responsive Web Design</h3>
+              <p><i class="fas fa-clock"></i> 20:00 hrs</p>
+              <p><i class="fas fa-calendar"></i> 10 de Dic</p>
+              <p><i class="fas fa-user"></i> Juan Pablo De La Torre Valdez</p>
+            </div>
+            <a href="#" class="button float-right"> Ver todos</a>
+          </div><!--Conferencias-->
+          <div id="seminarios" class="info-curso ocultar clearfix">
+            <div class="detalle-evento">
+              <h3>HTML5, CSS3 y Javascript</h3>
+              <p><i class="fas fa-clock"></i> 16:00 hrs</p>
+              <p><i class="fas fa-calendar"></i> 10 de Dic</p>
+              <p><i class="fas fa-user"></i> Juan Pablo De La Torre Valdez</p>
+            </div>
+            <div class="detalle-evento">
+              <h3>Responsive Web Design</h3>
+              <p><i class="fas fa-clock"></i> 20:00 hrs</p>
+              <p><i class="fas fa-calendar"></i> 10 de Dic</p>
+              <p><i class="fas fa-user"></i> Juan Pablo De La Torre Valdez</p>
+            </div>
+            <a href="#" class="button float-right"> Ver todos</a>
+          </div><!--Conferencias-->
+        </div><!--Programa del evento-->
       </div>
     </div>
   </section>
@@ -335,10 +365,11 @@
 
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
   <script src="js/jquery-1.12.0.min.js"></script>
-  <script src="js/map.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/map.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
