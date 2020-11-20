@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #FE4017;
+  --secondary-color: #353535;
+  --font-oswald: 'Oswald', sans-serif;
+  --font-openSans: 'Open Sans', sans-serif;
+  --font-PTSans: 'PT Sans', sans-serif;
+}
+/* Galeria de fotos*/
+div.galeria a{
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+body.conferencia .navbar .activo{
+  border-bottom: 2px solid var(--primary-color) ;
+}

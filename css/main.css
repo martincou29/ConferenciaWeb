@@ -297,7 +297,7 @@ h1.nombre-sitio span{
   text-shadow: 0 0 30px black;
 }
 
-@media only screen and (min-width: 987px){
+@media only screen and (min-width: 978px){
   .char1{
     top: 20px; right: 20px;
   }
