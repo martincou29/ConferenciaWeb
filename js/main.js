@@ -17,6 +17,12 @@ $(function () {
     return false;
   })
 
+  //Menu Hamburguesa
+  $('.mobile-menu').on('click',function(){
+    // $('.navbar').css({'display': 'block'});
+    $('.navbar').slideToggle();
+  })
+
   //Numeros animados
   $('.resumen-evento li:nth-child(1) p').animateNumber({ number: 6 }, 1200);
   $('.resumen-evento li:nth-child(2) p').animateNumber({ number: 15 }, 1500);

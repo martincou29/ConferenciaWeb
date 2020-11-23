@@ -356,7 +356,7 @@ h1.nombre-sitio#title-nav::before{
   float: left;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 980px) {
   .logo img {
     height: 20%;
     width: 33%;
@@ -366,6 +366,7 @@ h1.nombre-sitio#title-nav::before{
 
 nav.navbar {
   display: none;
+  width: 100%;
 }
 
 nav.navbar a {
@@ -429,7 +430,7 @@ div.mobile-menu:hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 980px) {
   div.mobile-menu {
     display: none;
   }
