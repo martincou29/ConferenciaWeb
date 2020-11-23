@@ -243,8 +243,6 @@ div.informacion-evento {
 }
 
 div.informacion-evento p {
-  margin: 0;
-  display: inline;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -269,6 +267,7 @@ h2 {
 
 p.slogan {
   text-transform: none!important;
+  margin-top: 50px;
 }
 
 p.slogan span {
@@ -279,8 +278,8 @@ h1.nombre-sitio {
   font-family: var(--font-oswald);
   text-transform: uppercase;
   font-family: 'PT Sans', sans-serif;
-  font-size: 6vw;
-
+  font-size: 10vw;
+  margin-top: 30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -295,6 +294,7 @@ h1.nombre-sitio {
 h1.nombre-sitio span{
   position: relative;
   text-shadow: 0 0 30px black;
+
 }
 
 @media only screen and (min-width: 978px){
