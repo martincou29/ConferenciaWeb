@@ -17,10 +17,26 @@ $(function () {
     return false;
   })
 
+  //Navbar fixed
+  var windowsHeight = $(window).height();
+  var navbarHeight = $('.site-nav').innerHeight();
+
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll > windowsHeight){
+      $('.site-nav').addClass('fixed');
+      $('body').css("padding-top", navbarHeight + 'px');
+    }else{
+      $('.site-nav').removeClass('fixed');
+      $('body').css("padding-top", '0px');
+
+    }
+  })
+
   //Menu Hamburguesa
   $('.mobile-menu').on('click',function(){
-    // $('.navbar').css({'display': 'block'});
     $('.navbar').slideToggle();
+
   })
 
   //Numeros animados

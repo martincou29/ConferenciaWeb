@@ -1,8 +1,6 @@
-
-
+$(function(){
   //Mapa
   "use strict";
-
 
   var map = L.map('mapa').setView([-27.475956, -58.831277], 15);
 
@@ -14,3 +12,14 @@
     .bindTooltip('GDLWEBCamp 2018')
     .openTooltip();
 
+
+    console.log(map.getPanes());
+
+
+    //Index del mapa 1, debajo de la barra de navegacion
+    map.getPane('mapPane').style.zIndex = 1;
+    map.getPane('popupPane').style.zIndex = 1;
+    $('.leaflet-top').css("z-index", 1);
+    $('.leaflet-bottom').css("z-index", 1);
+
+})

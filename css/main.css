@@ -336,7 +336,18 @@ h1.nombre-sitio span{
 div.site-nav {
   padding: 20px;
   background-color: var(--secondary-color);
+  display: block;
 }
+
+.fixed{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  z-index: 99;
+}
+
 
 h1.nombre-sitio#title-nav {
   font-size: 3.5vw;
