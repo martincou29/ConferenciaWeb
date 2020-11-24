@@ -21,12 +21,12 @@ $(function () {
   var windowsHeight = $(window).height();
   var navbarHeight = $('.site-nav').innerHeight();
 
-  $(window).scroll(function(){
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if(scroll > windowsHeight){
+    if (scroll > windowsHeight) {
       $('.site-nav').addClass('fixed');
       $('body').css("padding-top", navbarHeight + 'px');
-    }else{
+    } else {
       $('.site-nav').removeClass('fixed');
       $('body').css("padding-top", '0px');
 
@@ -34,16 +34,24 @@ $(function () {
   })
 
   //Menu Hamburguesa
-  $('.mobile-menu').on('click',function(){
+  $('.mobile-menu').on('click', function () {
     $('.navbar').slideToggle();
 
   })
 
   //Numeros animados
-  $('.resumen-evento li:nth-child(1) p').animateNumber({ number: 6 }, 1200);
-  $('.resumen-evento li:nth-child(2) p').animateNumber({ number: 15 }, 1500);
-  $('.resumen-evento li:nth-child(3) p').animateNumber({ number: 3 }, 1200);
-  $('.resumen-evento li:nth-child(4) p').animateNumber({ number: 9 }, 1500);
+  var resumenEvento = jQuery('.resumen-evento');
+  if (resumenEvento.length > 0) {
+    $('.resumen-evento').waypoint(function () {
+      $('.resumen-evento li:nth-child(1) p').animateNumber({ number: 6 }, 1200);
+      $('.resumen-evento li:nth-child(2) p').animateNumber({ number: 15 }, 1500);
+      $('.resumen-evento li:nth-child(3) p').animateNumber({ number: 3 }, 1200);
+      $('.resumen-evento li:nth-child(4) p').animateNumber({ number: 9 }, 1500);
+    }, {
+      offset: '60%'
+    })
+  }
+
 
   //Cuenta regresiva
   $('.cuenta-regresiva').countdown('2020/12/10 09:00:00', function (event) {
