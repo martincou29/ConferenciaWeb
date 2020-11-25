@@ -18,7 +18,7 @@ html {
   line-height: 1.4;
 }
 
-/*f
+/*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
@@ -85,13 +85,29 @@ textarea {
 
 /* main.css
 *
-*  Hojas de estilo para la pagina principal del proyecto
+*  Hojas de estilo para la pagina principal del proyecto.
+*  Arquitectura: Primero las clases/componentes globales. Sigue el orden en el que aparecen las secciones en la web
 *
 *  Index
 *  └── Global
+*      └── Responsive Containers
+*      └── Buttons
 *  └── Header
+*      └── Lettering
 *  └── Navbar
 *      └── Mobile Menu
+*  └── Seccion
+*  └── Programa Evento
+*      └── Menu
+*      └── Detalle Evento
+*  └── Invitados
+*  └── Tabla Precios
+*  └── Mapa
+*  └── Testimoniales
+*  └── NewsLetter
+*  └── Cuenta Regresiva
+*  └── Footer
+
 */
 
 /* GLOBAL*/
@@ -160,6 +176,8 @@ ul {
     width: 85%;
   }
 }
+
+/** BUTTON */
 
 .button {
   font-family: var(--font-oswald);
@@ -523,8 +541,7 @@ div.programa-evento {
   }
 }
 
-
-
+/**  Menu Programa Evento  */
 nav.menu-programa {
   width: 100%;
 

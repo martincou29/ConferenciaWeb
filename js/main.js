@@ -1,4 +1,12 @@
 
+/**
+ * @JavasCript: main.js
+ * @Name: Martin Coutinho
+ * @Description:
+ * Used for main-site, lettering, navbar fixed, hamburger menu, animated numbers and countdown.
+ */
+
+
 $(function () {
   //Lettering
   $('.nombre-sitio').lettering();
@@ -54,7 +62,7 @@ $(function () {
 
 
   //Cuenta regresiva
-  $('.cuenta-regresiva').countdown('2020/12/10 09:00:00', function (event) {
+  $('.cuenta-regresiva').countdown('2020/12/23 14:00:00', function (event) {
     $('#dias').html(event.strftime('%D'));
     $('#horas').html(event.strftime('%H'));
     $('#minutos').html(event.strftime('%M'));
