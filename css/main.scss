@@ -100,25 +100,32 @@ textarea {
 *  └── Footer
 
 */
+
 /*Variables*/
+
+$orange: #FE4017;
+$dark: #353535;
+$openSans: "Open Sans", sans-serif;
+$PTSans: "PT Sans", sans-serif;
+$oswald: "Oswald", sans-serif;
+
 /* GLOBAL*/
+
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
   background-color: #f2f2f2;
-  font-family: "Open Sans", sans-serif;
+  font-family: $openSans;
 }
 
 h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
@@ -126,9 +133,9 @@ h2 {
 
 h3 {
   font-size: 1.8em;
-  font-family: "PT Sans", sans-serif;
+  font-family: $PTSans;
   margin: 0;
-  color: #FE4017;
+  color: $orange;
 }
 
 ul {
@@ -147,38 +154,34 @@ ul {
     width: 95%;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     width: 90%;
   }
 }
-
 @media (min-width: 992px) {
   .container {
     width: 85%;
   }
 }
-
 /** BUTTON */
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 1.2rem;
-  background-color: #FE4017;
+  background-color: $orange;
   color: white;
   padding: 10px 40px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  border: 1px solid #FE4017;
+  border: 1px solid $orange;
 }
 
 .button.hollow, .button.hollow:hover {
   background-color: white;
-  color: #FE4017;
+  color: $orange;
 }
 
 .button.transparente {
@@ -187,7 +190,7 @@ ul {
 }
 
 .button.transparente:hover {
-  border: 2px solid #FE4017;
+  border: 2px solid $orange;
 }
 
 .button:hover {
@@ -215,7 +218,6 @@ div.contenido-header {
     padding-top: 10px;
   }
 }
-
 nav.redes-sociales {
   text-align: center;
 }
@@ -236,7 +238,6 @@ nav.redes-sociales a:last-child {
     margin: 0 auto;
   }
 }
-
 div.informacion-evento {
   text-align: center;
   color: #fff;
@@ -248,7 +249,7 @@ div.informacion-evento p {
 }
 
 div.informacion-evento p i {
-  color: #FE4017;
+  color: $orange;
   font-size: 2.4rem;
 }
 
@@ -262,7 +263,7 @@ p.ciudad {
 }
 
 h2 {
-  font-family: "PT Sans", sans-serif;
+  font-family: $PTSans;
 }
 
 p.slogan {
@@ -275,7 +276,7 @@ p.slogan span {
 }
 
 h1.nombre-sitio {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
   font-size: 10vw;
@@ -289,7 +290,6 @@ h1.nombre-sitio {
     line-height: 1;
   }
 }
-
 /**Lettering */
 h1.nombre-sitio span {
   position: relative;
@@ -301,48 +301,56 @@ h1.nombre-sitio span {
     top: 20px;
     right: 20px;
   }
+
   .char2 {
     top: 0px;
     left: -20px;
   }
+
   .char3 {
     top: 10px;
     right: 20px;
   }
+
   .char4 {
     top: 5px;
     right: 10px;
   }
+
   .char5 {
     top: 15px;
     right: 10px;
   }
+
   .char6 {
     top: 5px;
     left: 10px;
   }
+
   .char7 {
     top: 20px;
     left: -10px;
   }
+
   .char8 {
     top: 0;
     left: 10px;
   }
+
   .char9 {
     top: 10px;
     right: 20px;
   }
+
   .char10 {
     top: 20px;
     right: 20px;
   }
 }
-
 /* NAVBAR */
 div.site-nav {
   padding: 20px;
-  background-color: #353535;
+  background-color: $dark;
   display: block;
 }
 
@@ -379,7 +387,6 @@ h1.nombre-sitio#title-nav::before{
     float: left;
   }
 }
-
 nav.navbar {
   display: none;
   width: 100%;
@@ -388,11 +395,10 @@ nav.navbar {
 nav.navbar a {
   color: #fff;
   font-size: 2vw;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.3rem;
-  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   width: 100%;
   text-align: center;
@@ -406,8 +412,8 @@ nav.navbar a:first-child {
 }
 
 nav.navbar a:last-child {
-  border: 2px solid #FE4017;
-  color: #FE4017;
+  border: 2px solid $orange;
+  color: $orange;
   margin-right: 0;
 }
 
@@ -416,7 +422,7 @@ nav.navbar a:last-child:hover {
 }
 
 nav.navbar a:hover {
-  background-color: #FE4017;
+  background-color: $orange;
 }
 
 @media only screen and (min-width: 990px) {
@@ -426,6 +432,7 @@ nav.navbar a:hover {
     display: block;
     text-align: right;
   }
+
   nav.navbar a {
     padding: 10px 10px;
     width: auto;
@@ -433,7 +440,6 @@ nav.navbar a:hover {
     margin: 10px 10px 0 0;
   }
 }
-
 /**MOBILE MENU*/
 div.mobile-menu {
   margin-top: 20px;
@@ -451,7 +457,6 @@ div.mobile-menu:hover {
     display: none;
   }
 }
-
 div.mobile-menu span {
   height: 10px;
   width: 60px;
@@ -496,7 +501,6 @@ div.contenedor-video {
     max-height: 50%;
   }
 }
-
 div.contenido-programa {
   position: absolute;
   top: 0;
@@ -517,13 +521,11 @@ div.programa-evento {
     width: 70%;
   }
 }
-
 @media only screen and (min-width: 992px) {
   div.programa-evento {
     width: 50%;
   }
 }
-
 /**  Menu Programa Evento  */
 nav.menu-programa {
   width: 100%;
@@ -534,16 +536,15 @@ nav.menu-programa {
     display: table;
   }
 }
-
 nav.menu-programa a {
   display: block;
   position: relative;
   text-align: center;
   color: #000000;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 1.5rem;
-  border-bottom: 1px solid #FE4017;
+  border-bottom: 1px solid $orange;
   margin-bottom: 10px;
 }
 
@@ -568,11 +569,10 @@ nav.menu-programa a.activo::after {
     border-spacing: 15px;
   }
 }
-
 nav.menu-programa a i, div.detalle-evento i {
   font-size: 1.6rem;
   margin-right: 10px;
-  color: #FE4017;
+  color: $orange;
 }
 
 /** detalle evento */
@@ -604,17 +604,13 @@ div.invitado {
 
 div.invitado img {
   width: 100%;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-  -webkit-transition: all 0.5s ease-in-out;
+  filter: grayscale(1);
   transition: all 0.5s ease-in-out;
 }
 
 div.invitado :hover img {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  filter: grayscale(0);
+  transform: scale(1.1);
   color: #000;
 }
 
@@ -627,12 +623,11 @@ div.invitado p {
   bottom: 0;
   padding: 15px 15px;
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 1.4rem;
-  color: #FE4017;
+  color: $orange;
   text-align: left;
   text-transform: uppercase;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -657,8 +652,7 @@ div.parallax::before {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  -webkit-filter: brightness(0.8);
-          filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 
 div.contador {
@@ -682,7 +676,7 @@ ul.resumen-evento li {
   width: 50%;
   color: #fff;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   text-align: center;
   margin-bottom: 20px;
   font-weight: bold;
@@ -693,14 +687,13 @@ ul.resumen-evento li {
     width: 25%;
   }
 }
-
 p.numero {
-  color: #FE4017;
+  color: $orange;
   display: block;
   font-size: 5rem;
   font-weight: bold;
   margin: 0 0 10px 0;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
 }
 
 /*TABLA DE PRECIOS*/
@@ -712,17 +705,13 @@ ul.lista-precios > li {
 
 @media only screen and (min-width: 63em) {
   ul.lista-precios {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
+
   ul.lista-precios li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(33.3% - 1rem);
-            flex: 0 0 calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
   }
 }
-
 div.tabla-precio {
   border: 1px solid #e1e1e1;
   background-color: #fff;
@@ -731,12 +720,9 @@ div.tabla-precio {
 }
 
 div.tabla-precio:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  border: 1px solid #FE4017;
-  -webkit-box-shadow: 0px 0px 50px #666;
-          box-shadow: 0px 0px 50px #666;
-  -webkit-transition: all 0.3s ease;
+  transform: scale(1.1);
+  border: 1px solid $orange;
+  box-shadow: 0px 0px 50px #666;
   transition: all 0.3s ease;
 }
 
@@ -769,7 +755,7 @@ div.tabla-precio ul li:before {
 
 div.tabla-precio h3 {
   font-size: 16px;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
 }
 
@@ -794,19 +780,14 @@ div.testimonial {
 
 @media only screen and (min-width: 998px) {
   div.testimoniales {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
+
   div.testimonial {
-    -ms-flex-preferred-size: calc(33.3% - 1rem);
-        flex-basis: calc(33.3% - 1rem);
+    flex-basis: calc(33.3% - 1rem);
   }
 }
-
 blockquote {
   background-color: #fff;
   border: 1px solid #e1e1e1;
@@ -818,7 +799,7 @@ blockquote {
 blockquote p {
   text-align: justify !important;
   font-size: 1rem !important;
-  font-family: "PT Sans", sans-serif;
+  font-family: $PTSans;
   padding: 0 20px 0 65px;
 }
 
@@ -830,7 +811,7 @@ blockquote p::before {
   font-size: 8rem;
   margin: 0;
   line-height: 2;
-  color: #FE4017;
+  color: $orange;
 }
 
 footer.info-testimonial {
@@ -848,7 +829,7 @@ footer.info-testimonial img {
 footer.info-testimonial cite {
   text-align: left;
   float: right;
-  color: #FE4017;
+  color: $orange;
   text-transform: uppercase;
   font-size: 12px;
   padding-top: 20px;
@@ -891,7 +872,7 @@ div.newsletter .contenido p {
 div.newsletter .contenido h3 {
   color: #fff;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: $PTSans;
   font-size: 7vw;
   margin-bottom: 20px;
   text-shadow: 4px 2px #000;
@@ -900,7 +881,7 @@ div.newsletter .contenido h3 {
 /* Cuenta regresiva */
 div.cuenta-regresiva ul li {
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 2rem;
   text-align: center;
 }
@@ -911,7 +892,6 @@ div.cuenta-regresiva ul li {
     float: left;
   }
 }
-
 /**Footer*/
 footer {
   background-color: #353535;
@@ -932,16 +912,15 @@ footer .container > div {
     float: left;
   }
 }
-
 footer h3 {
   color: #fff;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   margin-bottom: 20px;
 }
 
 footer h3 span {
-  color: #FE4017;
+  color: $orange;
 }
 
 footer .ultimos-tweets li {
@@ -1041,11 +1020,9 @@ p.copyright {
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
-
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -1056,19 +1033,22 @@ p.copyright {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a, a:visited {
     text-decoration: underline;
   }
+
   a[href]::after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
+
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
@@ -1076,13 +1056,16 @@ p.copyright {
   a[href^="#"]::after, a[href^="javascript:"]::after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -1090,15 +1073,19 @@ p.copyright {
   thead {
     display: table-header-group;
   }
+
   tr, img {
     page-break-inside: avoid;
   }
+
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2, h3 {
     page-break-after: avoid;
   }
 }
-/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.scss.map */
