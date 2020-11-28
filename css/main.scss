@@ -220,17 +220,16 @@ div.contenido-header {
 }
 nav.redes-sociales {
   text-align: center;
-}
-
-nav.redes-sociales a {
-  color: #fff;
+  a{
+    color: #fff;
   font-size: 2rem;
   margin-right: 2rem;
+  }
+  a:last-child{
+    margin-right: 0;
+  }
 }
 
-nav.redes-sociales a:last-child {
-  margin-right: 0;
-}
 
 @media only screen and (min-width: 768px) {
   div.informacion-evento {
@@ -241,11 +240,10 @@ nav.redes-sociales a:last-child {
 div.informacion-evento {
   text-align: center;
   color: #fff;
-}
-
-div.informacion-evento p {
-  font-size: 20px;
+  p{
+    font-size: 20px;
   text-transform: uppercase;
+  }
 }
 
 div.informacion-evento p i {
