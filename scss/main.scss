@@ -101,13 +101,10 @@ textarea {
 
 */
 
-/*Variables*/
+/*Utilities*/
 
-$orange: #FE4017;
-$dark: #353535;
-$openSans: "Open Sans", sans-serif;
-$PTSans: "PT Sans", sans-serif;
-$oswald: "Oswald", sans-serif;
+@import "utilities/variables";
+
 
 /* GLOBAL*/
 
