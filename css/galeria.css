@@ -7,9 +7,10 @@
 }
 /* Galeria de fotos*/
 div.galeria a{
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   display: inline-block;
 }
+
 
 body.conferencia .navbar .activo{
   border-bottom: 2px solid var(--primary-color) ;
