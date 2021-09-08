@@ -41,15 +41,28 @@ $(function () {
     } else {
       $('.site-nav').removeClass('fixed');
       $('body').css("padding-top", '0px');
-
     }
   })
 
   //Menu Hamburguesa
   $('.mobile-menu').on('click', function () {
-    $('.navbar').slideToggle();
-
+    var navbar = $(".navbar");
+    var show = $(".navbar").hasClass('hidden');
+    if (show) {
+      navbar.hide();
+      navbar.removeClass('hidden')
+      navbar.slideDown('slow');
+    }
+    else {
+      navbar.slideUp('slow', function () {
+        navbar.addClass('hidden');
+        navbar.show();
+      });
+    }
   })
+
+
+  
 
   //Numeros animados
 
@@ -73,10 +86,12 @@ $(function () {
     $('#horas').html(event.strftime('%H'));
     $('#minutos').html(event.strftime('%M'));
     $('#segundos').html(event.strftime('%S'));
-
-
   })
-
-
-
 })
+
+var navbar = $('.navbar');
+
+$(window).resize(function () {
+  if (window.innerWidth <= 994) navbar.addClass('hidden');
+  else navbar.removeClass('hiden');
+});

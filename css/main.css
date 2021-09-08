@@ -100,7 +100,8 @@ textarea {
 *  └── Footer
 
 */
-/*Variables*/
+/*Utilities*/
+/** Variables */
 /* GLOBAL*/
 html {
   -webkit-box-sizing: border-box;
@@ -268,6 +269,7 @@ h2 {
 p.slogan {
   text-transform: none !important;
   margin-top: 50px;
+  text-shadow: 2px 2px 2px black;
 }
 
 p.slogan span {
