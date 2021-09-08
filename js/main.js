@@ -29,41 +29,6 @@ $(function () {
     return false;
   })
 
-  //Navbar fixed
-  var windowsHeight = $(window).height();
-  var navbarHeight = $('.site-nav').innerHeight();
-
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll > windowsHeight) {
-      $('.site-nav').addClass('fixed');
-      $('body').css("padding-top", navbarHeight + 'px');
-    } else {
-      $('.site-nav').removeClass('fixed');
-      $('body').css("padding-top", '0px');
-    }
-  })
-
-  //Menu Hamburguesa
-  $('.mobile-menu').on('click', function () {
-    var navbar = $(".navbar");
-    var show = $(".navbar").hasClass('hidden');
-    if (show) {
-      navbar.hide();
-      navbar.removeClass('hidden')
-      navbar.slideDown('slow');
-    }
-    else {
-      navbar.slideUp('slow', function () {
-        navbar.addClass('hidden');
-        navbar.show();
-      });
-    }
-  })
-
-
-  
-
   //Numeros animados
 
   var resumenEvento = jQuery('.resumen-evento');
@@ -89,9 +54,3 @@ $(function () {
   })
 })
 
-var navbar = $('.navbar');
-
-$(window).resize(function () {
-  if (window.innerWidth <= 994) navbar.addClass('hidden');
-  else navbar.removeClass('hidden');
-});

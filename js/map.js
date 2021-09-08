@@ -12,10 +12,6 @@ $(function(){
     .bindTooltip('GDLWEBCamp 2018')
     .openTooltip();
 
-
-    console.log(map.getPanes());
-
-
     //Index del mapa 1, debajo de la barra de navegacion
     map.getPane('mapPane').style.zIndex = 1;
     map.getPane('popupPane').style.zIndex = 1;
