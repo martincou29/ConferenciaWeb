@@ -93,5 +93,5 @@ var navbar = $('.navbar');
 
 $(window).resize(function () {
   if (window.innerWidth <= 994) navbar.addClass('hidden');
-  else navbar.removeClass('hiden');
+  else navbar.removeClass('hidden');
 });
